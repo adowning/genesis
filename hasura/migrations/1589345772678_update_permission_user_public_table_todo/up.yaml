@@ -1,0 +1,11 @@
+- args:
+    permission:
+      backend_only: false
+      filter:
+        created_by:
+          _eq: X-Hasura-User-Id
+    role: user
+    table:
+      name: todo
+      schema: public
+  type: create_delete_permission

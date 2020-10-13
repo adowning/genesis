@@ -1,0 +1,13 @@
+{
+  "description": "Genesis - Full stack development starter",
+  "private": true,
+  "repository": "https://github.com/developer-rakeshpaul/genesis.git",
+  "author": "Rakesh Paul <rakesh.paul@xtrios.com>",
+  "license": "MIT",
+  "scripts": {
+     "docker": "docker-compose -f ./deploy/docker-compose.dev.yml --env-file=.env up -d",
+     "hasura:migrate": "hasura migrate apply --envfile ../.env --project hasura",
+     "hasura:console": "hasura console --envfile ../.env --project hasura"
+      
+    }
+}

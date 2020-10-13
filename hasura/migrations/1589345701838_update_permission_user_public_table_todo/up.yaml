@@ -1,0 +1,20 @@
+- args:
+    permission:
+      allow_upsert: true
+      backend_only: false
+      check:
+        created_by:
+          _eq: X-Hasura-User-Id
+      columns:
+      - id
+      - desc
+      - is_complete
+      - created_by
+      - created_at
+      - updated_at
+      set: {}
+    role: user
+    table:
+      name: todo
+      schema: public
+  type: create_insert_permission

@@ -1,0 +1,31 @@
+- args:
+    permission:
+      allow_aggregations: false
+      backend_only: false
+      columns:
+      - created_at
+      - email
+      - facebook_id
+      - github_id
+      - google_id
+      - id
+      - image_url
+      - last_login_at
+      - name
+      - phone
+      - role
+      - status
+      - token_version
+      - twitter_id
+      - updated_at
+      - username
+      computed_fields: []
+      filter:
+        id:
+          _eq: X-Hasura-User-Id
+      limit: null
+    role: user
+    table:
+      name: user
+      schema: public
+  type: create_select_permission

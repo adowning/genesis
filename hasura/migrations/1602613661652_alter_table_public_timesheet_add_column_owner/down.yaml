@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."timesheet" DROP COLUMN "owner";
+  type: run_sql

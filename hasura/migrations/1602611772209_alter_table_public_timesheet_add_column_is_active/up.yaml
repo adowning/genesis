@@ -1,0 +1,6 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE "public"."timesheet" ADD COLUMN "is_active" boolean NULL DEFAULT
+      true;
+  type: run_sql

@@ -1,0 +1,2 @@
+endpoint: ${HASURA_GRAPHQL_ENDPOINT:-http://localhost:9091}
+admin_secret: ${HASURA_GRAPHQL_ADMIN_SECRET:-genesis@Xtrios}

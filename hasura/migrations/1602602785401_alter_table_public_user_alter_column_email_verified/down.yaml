@@ -1,0 +1,5 @@
+- args:
+    cascade: false
+    read_only: false
+    sql: ALTER TABLE ONLY "public"."user" ALTER COLUMN "email_verified" DROP DEFAULT;
+  type: run_sql
